@@ -1,7 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.elyzar.play</groupId>
+    <groupId>com.wd.play</groupId>
     <artifactId>play-master</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
@@ -54,7 +54,7 @@
             <dependency>
                 <groupId>org.junit.jupiter</groupId>
                 <artifactId>junit-jupiter-api</artifactId>
-                <version>RELEASE</version>
+                <version>5.6.0</version>
                 <scope>test</scope>
             </dependency>
             <dependency>
@@ -72,6 +72,7 @@
         <module>animal</module>
         <module>learn</module>
         <module>springboot</module>
+        <module>converter</module>
     </modules>
 
 </project>

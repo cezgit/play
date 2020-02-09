@@ -1,4 +1,4 @@
-package com.elyzar.play.support.domain.farm;
+package com.wd.play.support.domain.farm;
 
 public abstract class Animal {
     String name;

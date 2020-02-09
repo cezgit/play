@@ -1,9 +1,9 @@
-package com.elyzar.play;
+package com.wd.play;
 
-import com.elyzar.play.patterns.behavioral.*;
-import com.elyzar.play.patterns.behavioral.memento.IteratorPatternDemo;
-import com.elyzar.play.patterns.creational.*;
-import com.elyzar.play.patterns.structural.*;
+import com.wd.play.patterns.behavioral.*;
+import com.wd.play.patterns.behavioral.memento.IteratorPatternDemo;
+import com.wd.play.patterns.creational.*;
+import com.wd.play.patterns.structural.*;
 
 public class RunAllPatterns {
 

@@ -1,4 +1,4 @@
-package com.elyzar.play.properties;
+package com.wd.play.properties;
 
 import java.util.Locale;
 import java.util.ResourceBundle;

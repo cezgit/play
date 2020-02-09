@@ -1,8 +1,8 @@
-package com.elyzar.play.patterns.creational;
+package com.wd.play.patterns.creational;
 
-import com.elyzar.play.support.domain.shape.Shape;
-import com.elyzar.play.support.domain.shape.ShapeAbstractFactory;
-import com.elyzar.play.support.domain.shape.ShapeFactoryProducer;
+import com.wd.play.support.domain.shape.Shape;
+import com.wd.play.support.domain.shape.ShapeAbstractFactory;
+import com.wd.play.support.domain.shape.ShapeFactoryProducer;
 
 public class AbstractFactoryPatternDemo {
 

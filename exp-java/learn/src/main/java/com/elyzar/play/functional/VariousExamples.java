@@ -1,9 +1,9 @@
-package com.elyzar.play.functional;
+package com.wd.play.functional;
 
-import com.elyzar.play.support.domain.common.CollectionSamples;
-import com.elyzar.play.support.domain.farm.Animal;
-import com.elyzar.play.support.domain.farm.Dog;
-import com.elyzar.play.support.domain.fruits.Fruit;
+import com.wd.play.support.domain.common.CollectionSamples;
+import com.wd.play.support.domain.farm.Animal;
+import com.wd.play.support.domain.farm.Dog;
+import com.wd.play.support.domain.fruits.Fruit;
 
 import java.util.List;
 import java.util.function.Function;

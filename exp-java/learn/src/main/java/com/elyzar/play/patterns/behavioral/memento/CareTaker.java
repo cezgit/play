@@ -1,4 +1,4 @@
-package com.elyzar.play.patterns.behavioral.memento;
+package com.wd.play.patterns.behavioral.memento;
 
 import java.util.ArrayList;
 import java.util.List;

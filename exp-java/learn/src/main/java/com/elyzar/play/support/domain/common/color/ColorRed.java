@@ -1,4 +1,4 @@
-package com.elyzar.play.support.domain.common.color;
+package com.wd.play.support.domain.common.color;
 
 public class ColorRed implements Color {
     @Override

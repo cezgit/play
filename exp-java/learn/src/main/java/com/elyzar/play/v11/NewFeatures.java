@@ -1,4 +1,4 @@
-package com.elyzar.play.v11;
+package com.wd.play.v11;
 
 public class NewFeatures {
     public static void main(String[] args) {

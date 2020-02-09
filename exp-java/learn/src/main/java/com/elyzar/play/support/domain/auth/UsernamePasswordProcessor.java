@@ -1,4 +1,4 @@
-package com.elyzar.play.support.domain.auth;
+package com.wd.play.support.domain.auth;
 
 public class UsernamePasswordProcessor extends AuthenticationProcessor {
 

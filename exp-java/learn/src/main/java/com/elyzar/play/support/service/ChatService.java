@@ -1,6 +1,6 @@
-package com.elyzar.play.support.service;
+package com.wd.play.support.service;
 
-import com.elyzar.play.support.domain.common.ChatUser;
+import com.wd.play.support.domain.common.ChatUser;
 
 // mediator interface
 public interface ChatService {

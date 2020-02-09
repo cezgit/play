@@ -1,4 +1,4 @@
-package com.elyzar.play.concurrency;
+package com.wd.play.concurrency;
 
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;

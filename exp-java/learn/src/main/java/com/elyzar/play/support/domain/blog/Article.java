@@ -1,4 +1,4 @@
-package com.elyzar.play.support.domain.blog;
+package com.wd.play.support.domain.blog;
 
 import java.util.Objects;
 

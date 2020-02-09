@@ -1,12 +1,12 @@
-package com.elyzar.play.patterns.creational;
+package com.wd.play.patterns.creational;
 
 
-import com.elyzar.play.support.domain.common.Speakable;
-import com.elyzar.play.support.domain.farm.Animal;
-import com.elyzar.play.support.domain.farm.AnimalFactory;
-import com.elyzar.play.support.domain.shape.Circle;
-import com.elyzar.play.support.domain.shape.Shape;
-import com.elyzar.play.support.domain.shape.ShapeFactoryFunctional;
+import com.wd.play.support.domain.common.Speakable;
+import com.wd.play.support.domain.farm.Animal;
+import com.wd.play.support.domain.farm.AnimalFactory;
+import com.wd.play.support.domain.shape.Circle;
+import com.wd.play.support.domain.shape.Shape;
+import com.wd.play.support.domain.shape.ShapeFactoryFunctional;
 
 import java.util.Optional;
 import java.util.function.Supplier;

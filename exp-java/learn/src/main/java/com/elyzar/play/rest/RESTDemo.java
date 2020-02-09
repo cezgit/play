@@ -1,4 +1,4 @@
-package com.elyzar.play.rest;
+package com.wd.play.rest;
 
 import java.io.File;
 import java.io.InputStream;

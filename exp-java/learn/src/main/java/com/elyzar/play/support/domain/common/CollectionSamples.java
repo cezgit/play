@@ -1,11 +1,11 @@
-package com.elyzar.play.support.domain.common;
+package com.wd.play.support.domain.common;
 
-import com.elyzar.play.support.domain.company.Employee;
-import com.elyzar.play.support.domain.fruits.Apple;
-import com.elyzar.play.support.domain.fruits.Fruit;
-import com.elyzar.play.support.domain.ordering.Customer;
-import com.elyzar.play.support.domain.ordering.Order;
-import com.elyzar.play.support.util.GenericBuilder;
+import com.wd.play.support.domain.company.Employee;
+import com.wd.play.support.domain.fruits.Apple;
+import com.wd.play.support.domain.fruits.Fruit;
+import com.wd.play.support.domain.ordering.Customer;
+import com.wd.play.support.domain.ordering.Order;
+import com.wd.play.support.util.GenericBuilder;
 
 import java.util.List;
 

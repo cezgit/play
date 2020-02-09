@@ -1,12 +1,12 @@
-package com.elyzar.play;
+package com.wd.play;
 
-import com.elyzar.play.concurrency.CompletableFutureExample;
-import com.elyzar.play.concurrency.ExceptionHandlingExample;
-import com.elyzar.play.concurrency.ExecutorServiceExample;
-import com.elyzar.play.functional.*;
-import com.elyzar.play.generics.GenericsExample;
-import com.elyzar.play.io.ReadingFilesExamples;
-import com.elyzar.play.io.WritingFileExample;
+import com.wd.play.concurrency.CompletableFutureExample;
+import com.wd.play.concurrency.ExceptionHandlingExample;
+import com.wd.play.concurrency.ExecutorServiceExample;
+import com.wd.play.functional.*;
+import com.wd.play.generics.GenericsExample;
+import com.wd.play.io.ReadingFilesExamples;
+import com.wd.play.io.WritingFileExample;
 
 import java.io.IOException;
 import java.net.URISyntaxException;

@@ -1,4 +1,4 @@
-package com.elyzar.play.support;
+package com.wd.play.support;
 
 public class Person {
     private String name;

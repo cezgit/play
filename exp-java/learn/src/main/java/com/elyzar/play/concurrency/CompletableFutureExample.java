@@ -1,6 +1,6 @@
-package com.elyzar.play.concurrency;
+package com.wd.play.concurrency;
 
-import com.elyzar.play.support.service.AnimalService;
+import com.wd.play.support.service.AnimalService;
 
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;

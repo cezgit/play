@@ -1,4 +1,4 @@
-package com.elyzar.play.support.domain.computer;
+package com.wd.play.support.domain.computer;
 
 public class StandardComputerBuilder extends ComputerBuilder {
 

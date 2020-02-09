@@ -1,4 +1,4 @@
-package com.elyzar.play.regex;
+package com.wd.play.regex;
 
 import java.util.Arrays;
 import java.util.regex.Matcher;

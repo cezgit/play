@@ -1,6 +1,6 @@
-package com.elyzar.play.concurrency;
+package com.wd.play.concurrency;
 
-import com.elyzar.play.support.domain.ordering.Product;
+import com.wd.play.support.domain.ordering.Product;
 import io.vavr.Tuple2;
 
 import java.util.List;

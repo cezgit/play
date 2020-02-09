@@ -1,4 +1,4 @@
-package com.elyzar.play.support.domain.social;
+package com.wd.play.support.domain.social;
 
 import java.util.ArrayList;
 import java.util.HashMap;

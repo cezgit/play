@@ -1,4 +1,4 @@
-package com.elyzar.play.support.domain.ordering;
+package com.wd.play.support.domain.ordering;
 
 import java.util.List;
 

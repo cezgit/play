@@ -1,4 +1,4 @@
-package com.elyzar.play.support.domain.shape;
+package com.wd.play.support.domain.shape;
 
 /**
  * Object adapters use the composition and can wrap classes as well as interfaces.

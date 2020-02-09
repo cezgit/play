@@ -1,4 +1,4 @@
-package com.elyzar.play.support.domain.common;
+package com.wd.play.support.domain.common;
 
 /**
  * Why clone method is Protected in Object class :- For the security reason, if any developer by mistaken implements the cloneable interface,

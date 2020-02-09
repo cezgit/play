@@ -1,6 +1,6 @@
-package com.elyzar.play.patterns.behavioral;
+package com.wd.play.patterns.behavioral;
 
-import com.elyzar.play.support.domain.auth.*;
+import com.wd.play.support.domain.auth.*;
 
 public class ChainOfResponsibilityPatternDemo {
 

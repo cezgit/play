@@ -1,4 +1,4 @@
-package com.elyzar.play.patterns.creational;
+package com.wd.play.patterns.creational;
 
 import java.util.ArrayList;
 import java.util.List;

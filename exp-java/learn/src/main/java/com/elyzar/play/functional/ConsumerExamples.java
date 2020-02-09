@@ -1,4 +1,4 @@
-package com.elyzar.play.functional;
+package com.wd.play.functional;
 
 import java.util.List;
 import java.util.function.BiConsumer;

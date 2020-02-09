@@ -1,4 +1,4 @@
-package com.elyzar.play.support.domain.shape;
+package com.wd.play.support.domain.shape;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,7 +1,7 @@
-package com.elyzar.play.functional;
+package com.wd.play.functional;
 
-import com.elyzar.play.support.domain.common.CollectionSamples;
-import com.elyzar.play.support.domain.fruits.Fruit;
+import com.wd.play.support.domain.common.CollectionSamples;
+import com.wd.play.support.domain.fruits.Fruit;
 
 import java.time.Instant;
 import java.util.Comparator;

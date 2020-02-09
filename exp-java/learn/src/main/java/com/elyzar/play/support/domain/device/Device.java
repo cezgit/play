@@ -1,4 +1,4 @@
-package com.elyzar.play.support.domain.device;
+package com.wd.play.support.domain.device;
 
 public interface Device {
     boolean isEnabled();

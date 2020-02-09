@@ -1,4 +1,4 @@
-package com.elyzar.play.support.domain.device;
+package com.wd.play.support.domain.device;
 
 /**
  * The base remote control class declares a reference field that links it with a device object.

@@ -3,13 +3,13 @@
 
     <parent>
         <artifactId>play-master</artifactId>
-        <groupId>com.elyzar.play</groupId>
+        <groupId>com.wd.play</groupId>
         <version>1.0-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.elyzar.play</groupId>
+    <groupId>com.wd.play</groupId>
     <artifactId>animal</artifactId>
     <packaging>jar</packaging>
     <version>1.0-SNAPSHOT</version>
@@ -25,7 +25,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>com.elyzar.play.animal.App</mainClass>
+                            <mainClass>com.wd.play.animal.App</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

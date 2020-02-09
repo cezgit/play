@@ -1,4 +1,4 @@
-package com.elyzar.play.support.util;
+package com.wd.play.support.util;
 
 public class Pair<F, S> {
     public final F fst;

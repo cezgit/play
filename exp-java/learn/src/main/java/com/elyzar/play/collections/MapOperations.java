@@ -1,6 +1,6 @@
-package com.elyzar.play.collections;
+package com.wd.play.collections;
 
-import com.elyzar.play.support.domain.blog.Article;
+import com.wd.play.support.domain.blog.Article;
 
 import java.util.*;
 import java.util.stream.Collectors;

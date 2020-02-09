@@ -1,7 +1,7 @@
-package com.elyzar.play.patterns.behavioral;
+package com.wd.play.patterns.behavioral;
 
-import com.elyzar.play.support.domain.media.mediaplayer.MediaPlayer;
-import com.elyzar.play.support.domain.media.mediaplayer.MediaPlayerUI;
+import com.wd.play.support.domain.media.mediaplayer.MediaPlayer;
+import com.wd.play.support.domain.media.mediaplayer.MediaPlayerUI;
 
 public class StatePatternDemo {
 

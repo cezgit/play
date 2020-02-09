@@ -1,4 +1,4 @@
-package com.elyzar.play.support.domain.media.news;
+package com.wd.play.support.domain.media.news;
 
 import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeSupport;

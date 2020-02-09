@@ -1,7 +1,7 @@
-package com.elyzar.play.support;
+package com.wd.play.support;
 
-import com.elyzar.play.support.util.GenericBuilder;
-import com.elyzar.play.support.util.NamedPredicate;
+import com.wd.play.support.util.GenericBuilder;
+import com.wd.play.support.util.NamedPredicate;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;

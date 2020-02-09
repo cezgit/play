@@ -1,8 +1,8 @@
-package com.elyzar.play.patterns.structural;
+package com.wd.play.patterns.structural;
 
-import com.elyzar.play.support.domain.media.mediaplayer.MediaPlayer;
-import com.elyzar.play.support.domain.media.mediaplayer.Playable;
-import com.elyzar.play.support.domain.shape.*;
+import com.wd.play.support.domain.media.mediaplayer.MediaPlayer;
+import com.wd.play.support.domain.media.mediaplayer.Playable;
+import com.wd.play.support.domain.shape.*;
 
 /**
  * clients call your program using an established interface

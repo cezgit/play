@@ -1,7 +1,7 @@
-package com.elyzar.play.support.domain.media.mediaplayer;
+package com.wd.play.support.domain.media.mediaplayer;
 
-import com.elyzar.play.support.domain.media.mediaplayer.states.MediaPlayerState;
-import com.elyzar.play.support.domain.media.mediaplayer.states.ReadyState;
+import com.wd.play.support.domain.media.mediaplayer.states.MediaPlayerState;
+import com.wd.play.support.domain.media.mediaplayer.states.ReadyState;
 
 import java.util.ArrayList;
 import java.util.List;

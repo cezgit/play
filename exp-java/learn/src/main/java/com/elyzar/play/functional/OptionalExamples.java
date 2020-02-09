@@ -1,8 +1,8 @@
-package com.elyzar.play.functional;
+package com.wd.play.functional;
 
-import com.elyzar.play.support.domain.company.Company;
-import com.elyzar.play.support.domain.company.Department;
-import com.elyzar.play.support.domain.company.Manager;
+import com.wd.play.support.domain.company.Company;
+import com.wd.play.support.domain.company.Department;
+import com.wd.play.support.domain.company.Manager;
 
 import java.util.List;
 import java.util.Optional;

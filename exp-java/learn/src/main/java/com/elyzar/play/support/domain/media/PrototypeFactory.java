@@ -1,6 +1,6 @@
-package com.elyzar.play.support.domain.media;
+package com.wd.play.support.domain.media;
 
-import com.elyzar.play.support.domain.common.PrototypeCapable;
+import com.wd.play.support.domain.common.PrototypeCapable;
 
 import java.util.Map;
 

@@ -1,11 +1,11 @@
-package com.elyzar.play.patterns.structural;
+package com.wd.play.patterns.structural;
 
-import com.elyzar.play.support.domain.common.color.ColorGreen;
-import com.elyzar.play.support.domain.common.color.ColorRed;
-import com.elyzar.play.support.domain.device.*;
-import com.elyzar.play.support.domain.shape.Circle;
-import com.elyzar.play.support.domain.shape.Rectangle;
-import com.elyzar.play.support.domain.shape.ShapeAbstract;
+import com.wd.play.support.domain.common.color.ColorGreen;
+import com.wd.play.support.domain.common.color.ColorRed;
+import com.wd.play.support.domain.device.*;
+import com.wd.play.support.domain.shape.Circle;
+import com.wd.play.support.domain.shape.Rectangle;
+import com.wd.play.support.domain.shape.ShapeAbstract;
 
 public class BridgePatternDemo {
     public static void main(String[] args) {

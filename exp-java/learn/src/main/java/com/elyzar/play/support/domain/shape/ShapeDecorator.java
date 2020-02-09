@@ -1,4 +1,4 @@
-package com.elyzar.play.support.domain.shape;
+package com.wd.play.support.domain.shape;
 
 public abstract class ShapeDecorator implements Shape {
 

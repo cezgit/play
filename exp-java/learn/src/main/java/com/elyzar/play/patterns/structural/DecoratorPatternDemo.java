@@ -1,10 +1,10 @@
-package com.elyzar.play.patterns.structural;
+package com.wd.play.patterns.structural;
 
-import com.elyzar.play.io.*;
-import com.elyzar.play.support.domain.shape.Circle;
-import com.elyzar.play.support.domain.shape.Rectangle;
-import com.elyzar.play.support.domain.shape.Shape;
-import com.elyzar.play.support.domain.shape.ShapeRedDecorator;
+import com.wd.play.io.*;
+import com.wd.play.support.domain.shape.Circle;
+import com.wd.play.support.domain.shape.Rectangle;
+import com.wd.play.support.domain.shape.Shape;
+import com.wd.play.support.domain.shape.ShapeRedDecorator;
 
 import java.io.IOException;
 import java.nio.file.Files;

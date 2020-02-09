@@ -1,4 +1,4 @@
-package com.elyzar.play.enums;
+package com.wd.play.enums;
 
 public class PayrollEnum {
 

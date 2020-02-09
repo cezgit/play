@@ -1,4 +1,4 @@
-package com.elyzar.play.support.util;
+package com.wd.play.support.util;
 
 @FunctionalInterface
 public interface CheckedFunction<T,R> {

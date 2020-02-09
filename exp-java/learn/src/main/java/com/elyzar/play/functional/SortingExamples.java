@@ -1,6 +1,6 @@
-package com.elyzar.play.functional;
+package com.wd.play.functional;
 
-import com.elyzar.play.support.domain.media.Movie;
+import com.wd.play.support.domain.media.Movie;
 
 import java.io.IOException;
 import java.net.URISyntaxException;

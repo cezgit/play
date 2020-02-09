@@ -1,9 +1,9 @@
-package com.elyzar.play.functional;
+package com.wd.play.functional;
 
-import com.elyzar.play.support.domain.common.CollectionSamples;
-import com.elyzar.play.support.domain.company.Employee;
-import com.elyzar.play.support.util.CheckedFunction;
-import com.elyzar.play.support.util.Either;
+import com.wd.play.support.domain.common.CollectionSamples;
+import com.wd.play.support.domain.company.Employee;
+import com.wd.play.support.util.CheckedFunction;
+import com.wd.play.support.util.Either;
 import io.vavr.CheckedFunction1;
 
 import java.util.function.Function;

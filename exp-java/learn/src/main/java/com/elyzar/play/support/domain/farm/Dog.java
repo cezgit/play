@@ -1,6 +1,6 @@
-package com.elyzar.play.support.domain.farm;
+package com.wd.play.support.domain.farm;
 
-import com.elyzar.play.support.domain.common.Speakable;
+import com.wd.play.support.domain.common.Speakable;
 
 import java.util.Arrays;
 import java.util.stream.Collectors;

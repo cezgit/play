@@ -1,4 +1,4 @@
-package com.elyzar.play.providers;
+package com.wd.play.providers;
 
 import java.util.Arrays;
 import java.util.stream.IntStream;

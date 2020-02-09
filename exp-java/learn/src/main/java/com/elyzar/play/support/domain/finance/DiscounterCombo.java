@@ -1,4 +1,4 @@
-package com.elyzar.play.support.domain.finance;
+package com.wd.play.support.domain.finance;
 
 import java.math.BigDecimal;
 import java.util.function.UnaryOperator;

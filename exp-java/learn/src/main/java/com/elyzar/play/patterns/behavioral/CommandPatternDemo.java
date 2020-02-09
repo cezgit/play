@@ -1,7 +1,7 @@
-package com.elyzar.play.patterns.behavioral;
+package com.wd.play.patterns.behavioral;
 
-import com.elyzar.play.support.domain.other.TextFile;
-import com.elyzar.play.support.domain.other.TextFileOperationExecutor;
+import com.wd.play.support.domain.other.TextFile;
+import com.wd.play.support.domain.other.TextFileOperationExecutor;
 
 public class CommandPatternDemo {
 

@@ -1,4 +1,4 @@
-package com.elyzar.play.enums;
+package com.wd.play.enums;
 
 import java.util.ArrayList;
 import java.util.List;

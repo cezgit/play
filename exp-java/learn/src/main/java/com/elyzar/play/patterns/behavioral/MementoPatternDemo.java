@@ -1,7 +1,7 @@
-package com.elyzar.play.patterns.behavioral;
+package com.wd.play.patterns.behavioral;
 
-import com.elyzar.play.patterns.behavioral.memento.CareTaker;
-import com.elyzar.play.patterns.behavioral.memento.Originator;
+import com.wd.play.patterns.behavioral.memento.CareTaker;
+import com.wd.play.patterns.behavioral.memento.Originator;
 
 public class MementoPatternDemo {
 

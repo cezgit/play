@@ -1,9 +1,9 @@
-package com.elyzar.play.patterns.behavioral;
+package com.wd.play.patterns.behavioral;
 
-import com.elyzar.play.support.domain.common.ChatUser;
-import com.elyzar.play.support.domain.common.SocialUser;
-import com.elyzar.play.support.service.ChatService;
-import com.elyzar.play.support.service.ChatServiceImpl;
+import com.wd.play.support.domain.common.ChatUser;
+import com.wd.play.support.domain.common.SocialUser;
+import com.wd.play.support.service.ChatService;
+import com.wd.play.support.service.ChatServiceImpl;
 
 public class MediatorPatternDemo {
 

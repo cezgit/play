@@ -1,4 +1,4 @@
-package com.elyzar.play.enums.math;
+package com.wd.play.enums.math;
 
 import java.util.Arrays;
 import java.util.Collection;

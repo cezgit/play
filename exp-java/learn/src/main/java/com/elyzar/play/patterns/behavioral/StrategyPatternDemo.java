@@ -1,6 +1,6 @@
-package com.elyzar.play.patterns.behavioral;
+package com.wd.play.patterns.behavioral;
 
-import com.elyzar.play.support.domain.finance.*;
+import com.wd.play.support.domain.finance.*;
 
 import java.math.BigDecimal;
 import java.util.List;

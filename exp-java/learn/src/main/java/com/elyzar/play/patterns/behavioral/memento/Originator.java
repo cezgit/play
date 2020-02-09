@@ -1,4 +1,4 @@
-package com.elyzar.play.patterns.behavioral.memento;
+package com.wd.play.patterns.behavioral.memento;
 
 public class Originator {
 

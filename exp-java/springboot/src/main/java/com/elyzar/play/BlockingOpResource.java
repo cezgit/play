@@ -1,4 +1,4 @@
-package com.elyzar.play;
+package com.wd.play;
 
 
 import org.springframework.boot.SpringApplication;

@@ -1,8 +1,8 @@
-package com.elyzar.play.support.service;
+package com.wd.play.support.service;
 
-import com.elyzar.play.support.domain.farm.Animal;
-import com.elyzar.play.support.domain.farm.Dog;
-import com.elyzar.play.support.util.GenericBuilder;
+import com.wd.play.support.domain.farm.Animal;
+import com.wd.play.support.domain.farm.Dog;
+import com.wd.play.support.util.GenericBuilder;
 
 public class AnimalService {
 

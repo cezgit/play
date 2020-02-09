@@ -1,6 +1,6 @@
-package com.elyzar.play.support.domain.common;
+package com.wd.play.support.domain.common;
 
-import com.elyzar.play.support.service.ChatService;
+import com.wd.play.support.service.ChatService;
 
 public abstract class ChatUser {
 

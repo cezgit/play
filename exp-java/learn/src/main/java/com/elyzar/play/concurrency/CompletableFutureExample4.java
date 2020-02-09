@@ -1,4 +1,4 @@
-package com.elyzar.play.concurrency;
+package com.wd.play.concurrency;
 
 /**
  * see BatchProcessor for what it does

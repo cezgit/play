@@ -1,4 +1,4 @@
-package com.elyzar.play.patterns.creational;
+package com.wd.play.patterns.creational;
 
 public interface AbstractFactory<T> {
     T create(String factoryType) ;

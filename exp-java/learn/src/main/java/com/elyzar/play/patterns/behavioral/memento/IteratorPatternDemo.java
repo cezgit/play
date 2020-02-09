@@ -1,9 +1,9 @@
-package com.elyzar.play.patterns.behavioral.memento;
+package com.wd.play.patterns.behavioral.memento;
 
-import com.elyzar.play.support.domain.social.Facebook;
-import com.elyzar.play.support.domain.social.Profile;
-import com.elyzar.play.support.domain.social.SocialNetwork;
-import com.elyzar.play.support.domain.social.SocialSpammer;
+import com.wd.play.support.domain.social.Facebook;
+import com.wd.play.support.domain.social.Profile;
+import com.wd.play.support.domain.social.SocialNetwork;
+import com.wd.play.support.domain.social.SocialSpammer;
 
 import java.util.ArrayList;
 import java.util.List;

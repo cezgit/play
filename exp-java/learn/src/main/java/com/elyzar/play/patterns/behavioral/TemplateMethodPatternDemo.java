@@ -1,8 +1,8 @@
-package com.elyzar.play.patterns.behavioral;
+package com.wd.play.patterns.behavioral;
 
-import com.elyzar.play.support.domain.computer.Computer;
-import com.elyzar.play.support.domain.computer.HighEndComputerBuilder;
-import com.elyzar.play.support.domain.computer.StandardComputerBuilder;
+import com.wd.play.support.domain.computer.Computer;
+import com.wd.play.support.domain.computer.HighEndComputerBuilder;
+import com.wd.play.support.domain.computer.StandardComputerBuilder;
 
 public class TemplateMethodPatternDemo {
 

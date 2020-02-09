@@ -1,6 +1,6 @@
-package com.elyzar.play.generics;
+package com.wd.play.generics;
 
-import com.elyzar.play.support.domain.farm.*;
+import com.wd.play.support.domain.farm.*;
 
 import java.util.ArrayList;
 import java.util.Collection;

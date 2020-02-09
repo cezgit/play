@@ -1,4 +1,4 @@
-package com.elyzar.play.types;
+package com.wd.play.types;
 
 import java.util.StringJoiner;
 import java.util.regex.Matcher;

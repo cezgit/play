@@ -1,4 +1,4 @@
-package com.elyzar.play.io;
+package com.wd.play.io;
 
 public interface FileDao {
 

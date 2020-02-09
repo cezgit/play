@@ -1,6 +1,6 @@
-package com.elyzar.play.patterns.structural;
+package com.wd.play.patterns.structural;
 
-import com.elyzar.play.support.domain.forest.Forest;
+import com.wd.play.support.domain.forest.Forest;
 
 import java.awt.*;
 

@@ -1,6 +1,6 @@
-package com.elyzar.play.support.domain.media.mediaplayer.states;
+package com.wd.play.support.domain.media.mediaplayer.states;
 
-import com.elyzar.play.support.domain.media.mediaplayer.MediaPlayer;
+import com.wd.play.support.domain.media.mediaplayer.MediaPlayer;
 
 public class LockedState extends MediaPlayerState {
 

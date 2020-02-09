@@ -1,4 +1,4 @@
-package com.elyzar.play.patterns.creational;
+package com.wd.play.patterns.creational;
 
 public class SingletonPatternDemo {
     public static void main(String[] args) {

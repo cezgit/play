@@ -1,6 +1,6 @@
-package com.elyzar.play.providers;
+package com.wd.play.providers;
 
-import com.elyzar.play.concurrency.ConcurrencyUtil;
+import com.wd.play.concurrency.ConcurrencyUtil;
 
 import java.util.stream.IntStream;
 import java.util.stream.Stream;

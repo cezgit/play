@@ -1,7 +1,7 @@
-package com.elyzar.play.functional;
+package com.wd.play.functional;
 
-import com.elyzar.play.support.domain.farm.Animal;
-import com.elyzar.play.support.domain.farm.Dog;
+import com.wd.play.support.domain.farm.Animal;
+import com.wd.play.support.domain.farm.Dog;
 import com.google.common.util.concurrent.Uninterruptibles;
 
 import java.util.List;

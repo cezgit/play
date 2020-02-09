@@ -1,4 +1,4 @@
-package com.elyzar.play.support.domain.media.image;
+package com.wd.play.support.domain.media.image;
 
 public class RealImage implements Image {
 

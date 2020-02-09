@@ -1,4 +1,4 @@
-package com.elyzar.play.support.domain.media.mediaplayer;
+package com.wd.play.support.domain.media.mediaplayer;
 
 public interface Playable {
 

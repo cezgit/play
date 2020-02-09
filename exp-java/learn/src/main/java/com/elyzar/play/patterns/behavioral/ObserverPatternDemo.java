@@ -1,7 +1,7 @@
-package com.elyzar.play.patterns.behavioral;
+package com.wd.play.patterns.behavioral;
 
-import com.elyzar.play.support.domain.media.news.NewsAgency;
-import com.elyzar.play.support.domain.media.news.NewsChannel;
+import com.wd.play.support.domain.media.news.NewsAgency;
+import com.wd.play.support.domain.media.news.NewsChannel;
 
 public class ObserverPatternDemo {
 

@@ -1,7 +1,7 @@
-package com.elyzar.play.patterns.creational;
+package com.wd.play.patterns.creational;
 
-import com.elyzar.play.support.domain.finance.BankAccount;
-import com.elyzar.play.support.domain.finance.BankAccountBuilderFunctional;
+import com.wd.play.support.domain.finance.BankAccount;
+import com.wd.play.support.domain.finance.BankAccountBuilderFunctional;
 
 /**
  * https://stackoverflow.com/questions/31754786/how-to-implement-the-builder-pattern-in-java-8

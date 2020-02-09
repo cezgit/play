@@ -1,4 +1,4 @@
-package com.elyzar.play.support.domain.fruits;
+package com.wd.play.support.domain.fruits;
 
 import java.util.Objects;
 

@@ -1,4 +1,4 @@
-package com.elyzar.play.support.domain.company;
+package com.wd.play.support.domain.company;
 
 import java.util.ArrayList;
 import java.util.List;

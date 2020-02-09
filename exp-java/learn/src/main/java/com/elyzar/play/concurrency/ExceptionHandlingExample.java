@@ -1,4 +1,4 @@
-package com.elyzar.play.concurrency;
+package com.wd.play.concurrency;
 
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;

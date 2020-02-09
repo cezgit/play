@@ -1,8 +1,8 @@
-package com.elyzar.play.patterns.structural;
+package com.wd.play.patterns.structural;
 
-import com.elyzar.play.support.domain.company.CompanyDirectory;
-import com.elyzar.play.support.domain.company.Employee;
-import com.elyzar.play.support.domain.company.Manager;
+import com.wd.play.support.domain.company.CompanyDirectory;
+import com.wd.play.support.domain.company.Employee;
+import com.wd.play.support.domain.company.Manager;
 
 public class CompositePatternDemo {
     public static void main(String[] args) {

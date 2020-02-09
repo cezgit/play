@@ -1,7 +1,7 @@
-package com.elyzar.play.functional;
+package com.wd.play.functional;
 
-import com.elyzar.play.support.domain.common.CollectionSamples;
-import com.elyzar.play.support.domain.company.Employee;
+import com.wd.play.support.domain.common.CollectionSamples;
+import com.wd.play.support.domain.company.Employee;
 
 import java.text.DecimalFormat;
 import java.util.DoubleSummaryStatistics;

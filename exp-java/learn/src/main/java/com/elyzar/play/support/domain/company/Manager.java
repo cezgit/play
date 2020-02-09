@@ -1,4 +1,4 @@
-package com.elyzar.play.support.domain.company;
+package com.wd.play.support.domain.company;
 
 public class Manager implements Associate {
     private String empId;

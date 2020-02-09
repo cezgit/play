@@ -1,7 +1,7 @@
-package com.elyzar.play.patterns.structural;
+package com.wd.play.patterns.structural;
 
-import com.elyzar.play.support.domain.media.image.Image;
-import com.elyzar.play.support.domain.media.image.ProxyImage;
+import com.wd.play.support.domain.media.image.Image;
+import com.wd.play.support.domain.media.image.ProxyImage;
 
 public class ProxyPatternDemo {
 

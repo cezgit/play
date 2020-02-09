@@ -1,4 +1,4 @@
-package com.elyzar.play.properties;
+package com.wd.play.properties;
 
 import java.io.IOException;
 import java.util.Properties;

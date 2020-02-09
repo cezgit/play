@@ -1,6 +1,6 @@
-package com.elyzar.play.patterns.creational;
+package com.wd.play.patterns.creational;
 
-import com.elyzar.play.support.domain.media.PrototypeFactory;
+import com.wd.play.support.domain.media.PrototypeFactory;
 
 public class PrototypePatternDemo {
 

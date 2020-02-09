@@ -1,4 +1,4 @@
-package com.elyzar.play.support.domain.device;
+package com.wd.play.support.domain.device;
 
 /**
  * You can develop the remote control classes independently from the device classes. All that’s needed is to create a new remote subclass.

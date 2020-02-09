@@ -1,6 +1,6 @@
-package com.elyzar.play.support.domain.shape;
+package com.wd.play.support.domain.shape;
 
-import com.elyzar.play.support.domain.common.color.Color;
+import com.wd.play.support.domain.common.color.Color;
 
 public class Circle extends Dot {
 
