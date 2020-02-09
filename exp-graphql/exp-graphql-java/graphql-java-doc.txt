@@ -1,0 +1,87 @@
+
+https://www.graphql-java.com/documentation/v11/execution/
+
+--------------------------------------------------------------------------------------------------
+
+GraphQLProvider.init()
+
+	buildSchema()
+
+		TypeDefinitionRegistry - Adds the ability to compile and build executable schemas
+			types
+				0 = {LinkedHashMap$Entry@5905} "Query" -> "ObjectTypeDefinition{name='Query', implements=[], directives=[], fieldDefinitions=[FieldDefinition{name='hero', type=TypeName{name='Character'}, inputValueDefinitions=[InputValueDefinition{name='episode', type=TypeName{name='Episode'}, defaultValue=null, directives=[]}], directives=[]}, FieldDefinition{name='human', type=TypeName{name='Human'}, inputValueDefinitions=[InputValueDefinition{name='id', type=TypeName{name='String'}, defaultValue=null, directives=[]}], directives=[]}, FieldDefinition{name='droid', type=TypeName{name='Droid'}, inputValueDefinitions=[InputValueDefinition{name='id', type=NonNullType{type=TypeName{name='ID'}}, defaultValue=null, directives=[]}], directives=[]}]}"
+				1 = {LinkedHashMap$Entry@5916} "Episode" -> "EnumTypeDefinition{name='Episode', enumValueDefinitions=[EnumValueDefinition{name='NEWHOPE', directives=[]}, EnumValueDefinition{name='EMPIRE', directives=[]}, EnumValueDefinition{name='JEDI', directives=[]}], directives=[]}"
+				2 = {LinkedHashMap$Entry@5917} "Character" -> "InterfaceTypeDefinition{name='Character', fieldDefinitions=[FieldDefinition{name='id', type=NonNullType{type=TypeName{name='ID'}}, inputValueDefinitions=[], directives=[]}, FieldDefinition{name='name', type=NonNullType{type=TypeName{name='String'}}, inputValueDefinitions=[], directives=[]}, FieldDefinition{name='friends', type=ListType{type=TypeName{name='Character'}}, inputValueDefinitions=[], directives=[]}, FieldDefinition{name='appearsIn', type=NonNullType{type=ListType{type=TypeName{name='Episode'}}}, inputValueDefinitions=[], directives=[]}, FieldDefinition{name='secretBackstory', type=TypeName{name='String'}, inputValueDefinitions=[], directives=[Directive{name='deprecated', arguments=[Argument{name='reason', value=StringValue{value='We have decided that this is not canon'}}]}]}], directives=[]}"
+				3 = {LinkedHashMap$Entry@5918} "Human" -> "ObjectTypeDefinition{name='Human', implements=[TypeName{name='Character'}], directives=[], fieldDefinitions=[FieldDefinition{name='id', type=NonNullType{type=TypeName{name='ID'}}, inputValueDefinitions=[], directives=[]}, FieldDefinition{name='name', type=NonNullType{type=TypeName{name='String'}}, inputValueDefinitions=[], directives=[]}, FieldDefinition{name='friends', type=ListType{type=TypeName{name='Character'}}, inputValueDefinitions=[], directives=[]}, FieldDefinition{name='appearsIn', type=NonNullType{type=ListType{type=TypeName{name='Episode'}}}, inputValueDefinitions=[], directives=[]}, FieldDefinition{name='homePlanet', type=TypeName{name='String'}, inputValueDefinitions=[], directives=[]}, FieldDefinition{name='secretBackstory', type=TypeName{name='String'}, inputValueDefinitions=[], directives=[Directive{name='deprecated', arguments=[Argument{name='reason', value=StringValue{value='We have decided that this is not canon'}}]}]}]}"
+				4 = {LinkedHashMap$Entry@5908} "Droid" -> "ObjectTypeDefinition{name='Droid', implements=[TypeName{name='Character'}], directives=[], fieldDefinitions=[FieldDefinition{name='id', type=NonNullType{type=TypeName{name='ID'}}, inputValueDefinitions=[], directives=[]}, FieldDefinition{name='name', type=NonNullType{type=TypeName{name='String'}}, inputValueDefinitions=[], directives=[]}, FieldDefinition{name='friends', type=ListType{type=TypeName{name='Character'}}, inputValueDefinitions=[], directives=[]}, FieldDefinition{name='appearsIn', type=NonNullType{type=ListType{type=TypeName{name='Episode'}}}, inputValueDefinitions=[], directives=[]}, FieldDefinition{name='primaryFunction', type=TypeName{name='String'}, inputValueDefinitions=[], directives=[]}, FieldDefinition{name='secretBackstory', type=TypeName{name='String'}, inputValueDefinitions=[], directives=[Directive{name='deprecated', arguments=[Argument{name='reason', value=StringValue{value='We have decided that this is not canon'}}]}]}]}"
+
+
+
+		RuntimeWiring (see StarWarsWiring)		
+			it loads the information for each type wiring (Query, Human, Droid, etc) needed to know what data fetcher to use for each field
+			for example: Query
+					hero: starWarsWiring.heroDataFetcher...	
+
+			dataFetchers
+			defaultDataFetchers
+			scalars
+			typeResolvers
+
+		SchemaGenerator schemaGenerator = new SchemaGenerator();
+	    GraphQLSchema schema = schemaGenerator.makeExecutableSchema(typeRegistry, runtimeWiring);		
+	    return schema
+
+
+
+
+
+	https://github.com/graphql-java/java-dataloader
+	https://www.graphql-java.com/documentation/v11/batching/
+	If you are using graphql, you are likely to making queries on a graph of data (surprise surprise). But it’s easy to implement inefficient code with naive loading of a graph of data. Using java-dataloader will help you to make this a more efficient process by both caching and batching requests for that graph of data items. If dataloader has seen a data item before, it will have cached the value and will return it without having to ask for it again.
+
+
+	This instrumentation implementation will dispatch all the data loaders as each level of the graphql query is executed and hence make batched objects
+	available to the query and the associated DataFetchers
+
+	GraphQL graphQL = GraphQL.newGraphQL(graphQLSchema).instrumentation(instrumentation).build();	
+	returns graphQL
+
+		GraphQLSchema
+		strategies = resolvers
+		instrumentations
+
+--------------------------------------------------------------------------------------------------
+
+GraphQLController
+	
+	construct
+		GraphQL (provided by the provider which runs before this)
+		ObjectMapper
+		ContextProvider - dataLoaderRegistry - dataLoaders (see Context)
+
+			The context object is passed to each level of a graphql query and in this case it contains
+ 			the data loader registry.  This allows us to keep our data loaders per request since
+			they cache data and cross request caches are often not what you want.
+
+
+	// To execute a query against a schema, build a new GraphQL object with the appropriate arguments and then call execute().
+	
+	ExecutionInput executionInput = ExecutionInput.newExecutionInput()
+                .query(query)
+                .variables(variables)
+                .operationName(operationName)
+                .context(context)
+                .build();
+    
+    ExecutionResult executionResult = graphQL.execute(executionInput);
+   
+    	data
+    	errors
+
+    Object data = executionResult.getData();	   
+    objectMapper.writeValueAsString(result)
+
+
+
+
+

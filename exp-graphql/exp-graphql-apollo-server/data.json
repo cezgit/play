@@ -1,0 +1,38 @@
+{
+    "productCatalogs": [
+        {
+            "id": "1",
+            "name": "pc1",
+            "version": 1,
+            "products": [
+                {
+                    "adId": 10,
+                    "advertiserId": 10,
+                    "title": "p10"
+                },
+                {
+                    "adId": 11,
+                    "advertiserId": 11,
+                    "title": "p11"
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "name": "pc2",
+            "version": 1,
+            "products": [
+                {
+                    "adId": 20,
+                    "advertiserId": 20,
+                    "title": "p20"
+                },
+                {
+                    "adId": 21,
+                    "advertiserId": 21,
+                    "title": "p21"
+                }
+            ]
+        }
+    ]
+}

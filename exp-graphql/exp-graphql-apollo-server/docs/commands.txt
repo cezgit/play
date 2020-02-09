@@ -1,0 +1,59 @@
+
+// project setup
+yarn init -y
+yarn add apollo-server graphql uuid lodash nodemon
+yarn start
+
+
+// create a catalog
+
+mutation {
+  createCatalog(catalogInfo: {name:"spa products"}) {
+    catalog {
+      id
+      name
+      version
+    }    
+  }
+}
+
+
+// query catalogs:
+
+{
+  catalogs {
+    id
+    name
+    version
+  }
+}
+
+// update a catalog
+
+mutation {
+  updateCatalog(catalogId: "1"){
+    catalog {
+      id
+      name
+      version
+    }    
+  }
+}
+
+// subscribe to a catalog update
+
+subscription {
+  updatedCatalog(id: "44a642c0-b7d3-11e9-9629-79744b394426") {
+    name
+  }
+}
+
+subscription {
+  updatedCatalog {
+    name
+  }
+}
+
+
+curl 'http://localhost:4000/' -H 'content-type: application/json' --data-binary '{"query": "{\n catalogs {\n id\n name\n version\n \n}\n}"}'
+curl -XPOST http://localhost:4000/ -H 'content-type: application/json' -d '{"query": "mutation { updateCatalog(catalogId: \"184280e0-b7a1-11e9-aa32-8b7cb0646210\"){ catalog { id name version } } }" }'

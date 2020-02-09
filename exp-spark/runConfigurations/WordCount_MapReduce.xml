@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="WordCount MapReduce" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="com.cj.spark.training.WordCount" />
+    <module name="Word Count - Hadoop MapReduce Example" />
+    <option name="PROGRAM_PARAMETERS" value="data/MonteCristo.txt data/output/WordCountMapReduce.txt" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

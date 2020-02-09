@@ -1,0 +1,34 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.elyzar.play</groupId>
+	<artifactId>kotlin</artifactId>
+	<packaging>jar</packaging>
+
+	<parent>
+		<groupId>com.elyzar.play</groupId>
+		<artifactId>parent-kotlin</artifactId>
+		<version>1.0-SNAPSHOT</version>
+		<relativePath>../parent-kotlin</relativePath>
+	</parent>
+
+	<properties>
+		<commons-math3.version>3.6.1</commons-math3.version>
+		<commons-lang3.version>3.8.1</commons-lang3.version>
+		<junit.platform.version>1.1.1</junit.platform.version>
+		<junit.vintage.version>5.2.0</junit.vintage.version>
+		<assertj.version>3.10.0</assertj.version>
+		<h2database.version>1.4.197</h2database.version>
+		<fuel.version>1.15.0</fuel.version>
+		<kovenant.version>3.3.0</kovenant.version>
+		<injekt-core.version>1.16.1</injekt-core.version>
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>${commons-lang3.version}</version>
+		</dependency>
+	</dependencies>
+</project>

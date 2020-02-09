@@ -1,0 +1,21 @@
+{
+  "name": "graphql-js-prototype",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "http://gitlab.cj.com/cbalaita/graphql-js-prototype.git",
+  "author": "Cezar <cbalaita@cj.com>",
+  "license": "MIT",
+  "dependencies": {
+    "apollo-server": "^2.8.1",
+    "fs": "^0.0.1-security",
+    "graphql": "^14.4.2",
+    "lodash": "^4.17.15",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  },
+  "scripts": {
+    "start": "nodemon src/server.js"
+  }
+}
