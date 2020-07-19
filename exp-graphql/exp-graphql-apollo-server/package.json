@@ -9,7 +9,7 @@
     "apollo-server": "^2.8.1",
     "fs": "^0.0.1-security",
     "graphql": "^14.4.2",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "uuid": "^3.3.2"
   },
   "devDependencies": {
