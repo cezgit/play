@@ -40,3 +40,5 @@ mvnw*
 .gitKeep
 src/css/*.css
 .vscode/launch.json
+
+exp-astro
