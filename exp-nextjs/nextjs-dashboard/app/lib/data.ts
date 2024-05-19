@@ -41,6 +41,9 @@ export async function fetchRevenue() {
 export async function fetchLatestInvoices() {
   noStore()
   try {
+    console.log('Fetching latest invoices...');
+    await new Promise((resolve) => setTimeout(resolve, 2000));
+
     const data = await pgSql<LatestInvoiceRaw>`
       SELECT invoices.amount, customers.name, customers.image_url, customers.email, invoices.id
       FROM invoices
