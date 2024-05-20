@@ -1,7 +1,7 @@
 
 import pool from './db';
 import { QueryResult, QueryResultRow } from 'pg';
-import { Revenue, LatestInvoiceRaw, LatestInvoice} from './definitions';
+import { Revenue, LatestInvoiceRaw, LatestInvoice, InvoicesTable} from './definitions';
 import { formatCurrency } from './utils';
 import { unstable_noStore as noStore } from 'next/cache';
 
@@ -95,5 +95,80 @@ export async function fetchCardData() {
   } catch (error) {
     console.error('Database Error:', error);
     throw new Error('Failed to fetch card data.');
+  }
+}
+
+const ITEMS_PER_PAGE = 6;
+export async function fetchFilteredInvoices(
+  query: string,
+  currentPage: number,
+) {
+  // noStore()
+  const offset = (currentPage - 1) * ITEMS_PER_PAGE;
+  const likeQuery = query ? `%${query}%` : null;
+  try {
+    let queryString = `
+      SELECT
+        invoices.id,
+        invoices.amount,
+        invoices.date,
+        invoices.status,
+        customers.name,
+        customers.email,
+        customers.image_url
+      FROM invoices
+      JOIN customers ON invoices.customer_id = customers.id
+      WHERE 1=1
+    `;
+
+    if (likeQuery) {
+      queryString += `
+        AND (
+          customers.name ILIKE $1 OR
+          customers.email ILIKE $1 OR
+          invoices.amount::text ILIKE $1 OR
+          invoices.date::text ILIKE $1 OR
+          invoices.status ILIKE $1
+        )
+      `;
+    }
+
+    queryString += `
+      ORDER BY invoices.date DESC
+      LIMIT ${ITEMS_PER_PAGE} OFFSET ${offset}
+    `;
+
+    const result = await pool.query(queryString, likeQuery ? [likeQuery] : []);
+    const invoices = result.rows as InvoicesTable[];
+
+    return invoices;
+  } catch (error) {
+    console.error('Database Error:', error);
+    throw new Error('Failed to fetch invoices.');
+  }
+}
+
+export async function fetchInvoicesPages(query: string) {
+  noStore()
+  const likeQuery = `%${query}%`;
+  try {
+    const result = await pool.query(`SELECT COUNT(*)
+    FROM invoices
+    JOIN customers ON invoices.customer_id = customers.id
+    WHERE
+      customers.name ILIKE $1 OR
+      customers.email ILIKE $1 OR
+      invoices.amount::text ILIKE $1 OR
+      invoices.date::text ILIKE $1 OR
+      invoices.status ILIKE $1 
+  `, [likeQuery]);
+
+    const count = result.rows; 
+    console.log('Count:', count)
+    const totalPages = Math.ceil(Number(count[0].count) / ITEMS_PER_PAGE);
+    return totalPages;
+  } catch (error) {
+    console.error('Database Error:', error);
+    throw new Error('Failed to fetch total number of invoices.');
   }
 }
