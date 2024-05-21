@@ -1,7 +1,7 @@
 
 import pool from './db';
 import { QueryResult, QueryResultRow } from 'pg';
-import { Revenue, LatestInvoiceRaw, LatestInvoice, InvoicesTable} from './definitions';
+import { Revenue, LatestInvoiceRaw, LatestInvoice, InvoicesTable, CustomerField, InvoiceForm} from './definitions';
 import { formatCurrency } from './utils';
 import { unstable_noStore as noStore } from 'next/cache';
 
@@ -170,5 +170,50 @@ export async function fetchInvoicesPages(query: string) {
   } catch (error) {
     console.error('Database Error:', error);
     throw new Error('Failed to fetch total number of invoices.');
+  }
+}
+
+export async function fetchCustomers() {
+  try {
+    const data = await pool.query(`
+      SELECT
+        id,
+        name
+      FROM customers
+      ORDER BY name ASC
+    `);
+
+    const customers = data.rows;
+    return customers;
+  } catch (err) {
+    console.error('Database Error:', err);
+    throw new Error('Failed to fetch all customers.');
+  }
+}
+
+export async function fetchInvoiceById(id: string) {
+  console.log('id: ', id)
+  try {
+    const data = await pool.query(`
+      SELECT
+        id,
+        customer_id,
+        amount,
+        status
+      FROM invoices
+      WHERE id = '${id}';
+    `);
+    console.log('data: ', data)
+
+    const invoice = data.rows.map((invoice) => ({
+      ...invoice,
+      // Convert amount from cents to dollars
+      amount: invoice.amount / 100,
+    }));
+
+    return invoice[0];
+  } catch (error) {
+    console.error('Database Error:', error);
+    throw new Error('Failed to fetch invoice.');
   }
 }
